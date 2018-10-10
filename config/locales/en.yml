@@ -16,6 +16,7 @@ en:
       name: Welcome to the Sample App
       link_rails_home: This is the home page for the <a href = "http://www.railstutorial.org" > Ruby on Rails Tutorial</a> sample application.
       sign_up: Sign up now!
+      rails_logo: Rails logo
     help:
       title: Help
       link_help: Get help on the Ruby on Rails Tutorial at the <a href = "http://www.railstutorial.org/help" >Rails Tutorial help section </a>.
