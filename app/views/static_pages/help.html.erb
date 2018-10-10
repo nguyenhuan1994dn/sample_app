@@ -1,9 +1,6 @@
 <% provide(:title, t(".title")) %>
 <h1><%= t(".title") %></h1>
 <p>
-  <%= t(".param_1") %>
-  <%= link_to t(".help_link"), t(".help_url") %>.
-  <%= t(".param_2") %>
-  <em><%= link_to t(".book_link"), t(".book_url") %></em>
-  <%= t(".book") %>
+  <%= raw t ".link_help" %>
+  <%= raw t ".link_book" %>
 </p>
