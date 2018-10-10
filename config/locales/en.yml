@@ -39,3 +39,6 @@ en:
       param: Contact the Ruby on Rails Tutorial about the sample app at the
       contact_link: contact page
       contact_url: http://www.railstutorial.org/contact
+  helpers:
+    application_helper:
+      title: Ruby on Rails Tutorial Sample App
