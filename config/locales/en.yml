@@ -1,44 +1,35 @@
 en:
-  layout:
-    application:
-      title: Ruby on Rails Tutorial Sample App
+  layouts:
+    footer:
+      link_rails: The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+      link_author: by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+      link_about: About
+      link_contact: Contact
+      link_new: New
+    header:
+      sample_app: sample app
+      link_home: Home
+      link_help: Help
+      link_log_in: Log in
   static_pages:
     home:
-      title: Home
-      name: Sample App
-      param_1: This is the home page for the
-      rails_link: Ruby on Rails Tutorial
-      rails_url: http://www.railstutorial.org/
-      param_2: sample application.
+      name: Welcome to the Sample App
+      link_rails_home: This is the home page for the <a href = "http://www.railstutorial.org" > Ruby on Rails Tutorial</a> sample application.
+      sign_up: Sign up now!
     help:
       title: Help
-      param_1: Get help on the Ruby on Rails Tutorial at the
-      help_link: Rails Tutorial help section
-      help_url: http://www.railstutorial.org/help
-      param_2: To get help on this sample app, see the
-      book_link: Ruby on Rails Tutorial
-      book_url: http://www.railstutorial.org/book
-      param_3: book
+      link_help: Get help on the Ruby on Rails Tutorial at the <a href = "http://www.railstutorial.org/help" >Rails Tutorial help section </a>.
+      link_book: To get help on this sample app, see the <a href = "http://www.railstutorial.org/book"><em>Ruby on Rails Tutorial</em> book</a>.
     about:
       title: About
-      param_1: The
-      rails_link: Ruby on Rails Tutorial
-      rails_url: http://www.railstutorial.org/
-      param_2: is a
-      book_link: book
-      book_url: http://www.railstutorial.org/book
-      param_3: and
-      screencast_series_link: screencast series
-      screencast_series_url: http://screencasts.railstutorial.org/
-      param_4: to teach web development with
-      ruby_on_rails_link: Ruby on Rails
-      ruby_on_rails_book: http://rubyonrails.org/
-      param_5: This is the sample application for the tutorial.
+      link_rails: The <a href = "http://www.railstutorial.org" > Ruby on Rails Tutorial</a>
+      link_book: is a <a href = "http://www.railstutorial.org/book">book</a> and
+      link_screencasts: <a href = "http://screencasts.railstutorial.org/" > screencast series</a> to teach web development with
+      link_end: <a href = "http://www.railstutorial.org"> Ruby on Rails</a>. This is the sample application for the tutorial.
     contact:
       title: Contact
-      param: Contact the Ruby on Rails Tutorial about the sample app at the
-      contact_link: contact page
-      contact_url: http://www.railstutorial.org/contact
+      link_about: Contact the Ruby on Rails Tutorial about the sample app at the
+      link_contact: <a href = "http://www.railstutorial.org/contact">contact page</a>.
   helpers:
     application_helper:
       title: Ruby on Rails Tutorial Sample App
