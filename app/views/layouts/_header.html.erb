@@ -5,7 +5,22 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to t(".link_home"), root_path %></li>
         <li><%= link_to t(".link_help"), help_path %></li>
-        <li><%= link_to t(".link_log_in"), "#" %></li>
+        <% if logged_in? %>
+          <li><%= link_to t(".link_user"), '#' %></li>
+          <li class="dropdown">
+            <%= t ".account_html" %>
+            <ul class="dropdown-menu">
+              <li><%= link_to t(".link_profile"), current_user %></li>
+              <li><%= link_to t(".link_settings"), '#' %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to t(".link_logout"), logout_path, method: :delete %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+        <li><%= link_to t(".link_log_in"), login_path %></li>
+        <% end %>
       </ul>
     </nav>
   </div>
