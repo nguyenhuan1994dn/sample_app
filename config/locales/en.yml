@@ -34,3 +34,22 @@ en:
   helpers:
     application_helper:
       title: Ruby on Rails Tutorial Sample App
+    label:
+      user:
+        name: Name
+        email: Email
+        password: Password
+  controllers:
+    users_controller:
+      welcome: Welcome to the Sample App!
+  users:
+    new:
+      sign_up: Sign up
+      confirmation: Confirmation
+      create: Create my account
+  shared:
+    error_messages:
+      form_contents: The form contains
+  error:
+    one: You have 1 error
+    other: You have %{count} errors
