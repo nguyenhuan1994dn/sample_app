@@ -11,6 +11,12 @@ en:
       link_home: Home
       link_help: Help
       link_log_in: Log in
+      link_user: Users
+      account_html: <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        Account <b class="caret"></b></a>
+      link_profile: Profile
+      link_settings: Settings
+      link_logout: Log out
   static_pages:
     home:
       name: Welcome to the Sample App
@@ -42,14 +48,16 @@ en:
   controllers:
     users_controller:
       welcome: Welcome to the Sample App!
+    sessions_controller:
+      invalid: Invalid email/password combination
   users:
     new:
       sign_up: Sign up
       confirmation: Confirmation
       create: Create my account
-  shared:
-    error_messages:
-      form_contents: The form contains
   error:
-    one: You have 1 error
-    other: You have %{count} errors
+    one: The form contains 1 error
+    other: The form contains %{count} errors
+  sessions:
+    log_in: Log in
+    sign_up: Sign up now!
