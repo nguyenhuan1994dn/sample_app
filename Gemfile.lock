@@ -49,7 +49,7 @@ GEM
       io-like (~> 0.3.0)
     arel (9.0.0)
     ast (2.4.0)
-    autoprefixer-rails (9.1.4)
+    autoprefixer-rails (9.2.1)
       execjs
     bcrypt (3.1.12)
     bindex (0.5.0)
@@ -58,6 +58,8 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bootstrap-will_paginate (1.0.0)
+      will_paginate
     builder (3.2.3)
     byebug (10.0.2)
     capybara (3.9.0)
@@ -118,6 +120,8 @@ GEM
     erubi (1.7.1)
     excon (0.62.0)
     execjs (2.7.0)
+    faker (1.9.1)
+      i18n (>= 0.7)
     ffi (1.9.25)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
@@ -265,7 +269,7 @@ GEM
     fog-voxel (0.1.0)
       fog-core
       fog-xml
-    fog-vsphere (2.3.0)
+    fog-vsphere (2.4.0)
       fog-core
       rbvmomi (~> 1.9)
     fog-xenserver (1.0.0)
@@ -434,9 +438,10 @@ GEM
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
+    will_paginate (3.1.6)
     xml-simple (1.1.5)
     xmlrpc (0.3.0)
-    xpath (3.1.0)
+    xpath (3.2.0)
       nokogiri (~> 1.8)
 
 PLATFORMS
@@ -446,11 +451,13 @@ DEPENDENCIES
   bcrypt (= 3.1.12)
   bootsnap (>= 1.1.0)
   bootstrap-sass (= 3.3.7)
+  bootstrap-will_paginate (= 1.0.0)
   byebug
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
   config
+  faker (= 1.9.1)
   fog (= 1.42)
   jbuilder (~> 2.5)
   jquery-rails (= 4.3.1)
@@ -469,6 +476,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
+  will_paginate (= 3.1.6)
 
 RUBY VERSION
    ruby 2.5.1p57
