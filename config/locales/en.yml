@@ -16,6 +16,7 @@ en:
       link_profile: Profile
       link_settings: Settings
       link_logout: Log out
+      link_settings: Settings
   static_pages:
     home:
       name: Welcome to the Sample App
@@ -44,16 +45,30 @@ en:
         name: Name
         email: Email
         password: Password
+        password_confirmation: Confirmation
   controllers:
     users_controller:
       welcome: Welcome to the Sample App!
+      update_user: Profile updated
+      del_user: User deleted
+      user_not_found: User not found
+      pls_log_in: Please log in.
     sessions_controller:
       invalid: Invalid email/password combination
   users:
     new:
       sign_up: Sign up
-      confirmation: Confirmation
       create: Create my account
+    index:
+      index_title: All users
+    user:
+      link_delete: delete
+      cf_sure: You sure?
+    edit:
+      title_edit: Edit user
+      edit_header: Update your profile
+      save_btn: Save changes
+      link_change: change
   error:
     one: The form contains 1 error
     other: The form contains %{count} errors

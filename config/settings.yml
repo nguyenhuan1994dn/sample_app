@@ -1,7 +1,13 @@
 user:
-  validate:
-    name_max_length: 50
-    email_max_length: 255
-    password_min_length: 6
+  name_max_length: 50
+  email_max_length: 255
+  password_min_length: 6
 sessions:
   check_session: "1"
+helpers:
+  users_helper:
+    size: 80
+users:
+  gravatar:
+    size: 50
+users_per_page: 15
