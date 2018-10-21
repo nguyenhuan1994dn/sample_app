@@ -1,7 +1,5 @@
 <li>
   <%= gravatar_for user, size: Settings.users.gravatar.size %>
   <%= link_to user.name, user %>
-  <% authorization_delete user %>
-    | <%= link_to t(".link_delete"), user, method: :delete,
-    data: { confirm: t(".cf_sure")} %>
+  <%= authorization_delete user %> 
 </li>
