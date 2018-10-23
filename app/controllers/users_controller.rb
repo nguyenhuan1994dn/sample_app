@@ -9,7 +9,10 @@ class UsersController < ApplicationController
       per_page: Settings.users_per_page
   end
 
-  def show; end
+  def show
+    @microposts = @user.feed.paginate page: params[:page],
+      per_page: Settings.posts_per_page
+  end
 
   def new
     @user = User.new
@@ -60,18 +63,13 @@ class UsersController < ApplicationController
       :password, :password_confirmation
   end
 
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t "controllers.users_controller.pls_log_in"
-    redirect_to login_path
-  end
-
   def correct_user
-    redirect_to(root_path) unless current_user?(@user)
+    redirect_to(root_path) unless current_user? @user
   end
 
   def admin_user
-    redirect_to(root_url) unless current_user.admin?
+    return if current_user.admin?
+    flash[:danger] = t "controllers.users_controller.dont_have_permisson"
+    redirect_to root_path
   end
 end
