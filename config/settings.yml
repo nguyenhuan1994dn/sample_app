@@ -12,3 +12,8 @@ users:
   gravatar:
     size: 50
 users_per_page: 15
+posts_per_page: 15
+content_max_size: 140
+gravatar_post_size: 50
+img_max_size: 5
+type_img: "image/jpeg,image/gif,image/png"

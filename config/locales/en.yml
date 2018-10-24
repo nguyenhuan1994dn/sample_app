@@ -23,6 +23,7 @@ en:
       link_rails_home: This is the home page for the <a href = "http://www.railstutorial.org" > Ruby on Rails Tutorial</a> sample application.
       sign_up: Sign up now!
       rails_logo: Rails logo
+      post_feed: "Micropost Feed"
     help:
       title: Help
       link_help: Get help on the Ruby on Rails Tutorial at the <a href = "http://www.railstutorial.org/help" >Rails Tutorial help section </a>.
@@ -52,20 +53,27 @@ en:
       update_user: "Profile updated"
       del_user: "User deleted"
       user_not_found: "User not found"
-      pls_log_in: "Please log in."
+      dont_have_permission: "You don't have permission to perfomr this action"
     sessions_controller:
       invalid: "Invalid email/password combination"
       check_email: "Account not activated. Check your email for the activation link."
     account_activations_controller:
       actived: "Account activated!"
       invalid: "Invalid activation link"
-    password_resets_controller:
+    password_resets:
       email_sent: "Email sent with password reset instructions"
-      e_notfound: "Email address not found"
+      email_not_found: "Email address not found"
       pass_error: "can't be empty"
       reset_success: "Password has been reset."
-      user_notfound: User not found
+      user_not_found: User not found
       expire_pass: "Password reset has expired."
+    application_controller:
+      pls_log_in: "Please log in."
+    microposts_controller:
+      post_created: "Micropost created!"
+      post_del: "Micropost deleted"
+      post_notfound: "Micropost not found"
+      post_cantdel: "You can delete Micropost"
   users:
     new:
       sign_up: "Sign up"
@@ -80,9 +88,14 @@ en:
     user:
       link_delete: "| delete"
       cf_sure: "You sure?"
+    show:
+      microposts_of_user: "Microposts (%{count})"
   error:
     one: "The form contains 1 error"
     other: The form contains %{count} errors
+  micropost:
+    one: "1 micropost"
+    other: "%{count} microposts"
   sessions:
     new:
       log_in: "Log in"
@@ -113,3 +126,16 @@ en:
     new:
       title_forgot_pass: "Forgot password"
       btn_submit: "Submit"
+  img_size_errors: "should be less than 5MB"
+  shared:
+    micropost_form:
+      compose_post: "Compose new micropost..."
+      btn_post: "Post"
+      alert_img_size: Maximum file size is 5MB. Please choose a smaller file.
+    user_info:
+      link_profile: "view my profile"
+  microposts:
+    micropost:
+      link_del: "delete"
+      cf_sure: "You sure?"
+      time_post: Posted %{time} ago.
